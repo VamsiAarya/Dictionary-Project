@@ -76,6 +76,8 @@ button{
     .resultContainer{
         position: relative;
         margin:  0%;
+        width: 90%;
+        
     }
 
     .searchContainer{
