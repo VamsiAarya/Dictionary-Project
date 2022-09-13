@@ -1,0 +1,91 @@
+*{
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 90%;
+    height: 90%;
+    background-color: powderblue;
+}
+
+.mainContainer{
+    margin: 1rem 5rem;
+    text-align: center;
+}
+.searchContainer{
+    position: absolute;
+    margin: 1rem 5rem;
+    padding : 2rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.resultContainer{
+    position: absolute;
+    top: 6rem;
+    right: 10rem;
+    padding: 1rem;
+}
+
+.searchContainer,
+.resultContainer {
+    width: 30%;
+    background-color: aliceblue;
+    border-radius: 2rem;
+    box-shadow: 5px 5px gray;
+}
+#searchBar{
+    width: 70%;
+    height: 2rem;
+}
+
+button{
+    width: 70px;
+    height: 32px;
+}
+
+.results{
+    list-style-type: none;
+    width: 100%;
+}
+
+.resultElement{
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 90%;
+    background-color: cornsilk;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+
+@media screen and (max-width: 900px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .searchContainer,
+    .resultContainer{
+        position: relative;
+        margin:  0%;
+    }
+
+    .searchContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .resultContainer{
+        top:0%;
+        right: auto;
+    }
+}
