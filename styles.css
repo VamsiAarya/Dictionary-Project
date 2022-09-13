@@ -89,5 +89,6 @@ button{
     .resultContainer{
         top:0%;
         right: auto;
+        margin-top: 1rem;
     }
 }
